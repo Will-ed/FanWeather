@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="6dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="8dp">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+            <TextView
+                android:id="@+id/default_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="默认城市："
+                android:textColor="@color/icons"/>
+            <EditText
+                android:id="@+id/set_city"
+                android:layout_toRightOf="@+id/default_city"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"/>
+
+            <Button
+                android:id="@+id/set_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textColor="@color/icons"
+                android:background="@color/colorPrimaryDark"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
